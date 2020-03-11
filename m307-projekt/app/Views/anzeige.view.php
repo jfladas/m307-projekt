@@ -58,8 +58,8 @@
             <td><?= $task->name ?></td>
             <td><?= $task->email ?></td>
             <td><?= $task->phone ?></td>
-            <td><?= $categories[$task->category]->name ?></td>
-            <td><?= $fruits[$task->fruit]->name ?></td>
+            <td><?= $categories[$task->category-1]->name ?></td>
+            <td><?= $fruits[$task->fruit-1]->name ?></td>
             <td><?= $status ?></td>
             <td><?= date("d.m.Y", strtotime("+ $days Days")) . "<br>"; ?></td>
             <td><a href="?uri=edittask&?id=<?= $task->id ?>">✏️</a></td>
