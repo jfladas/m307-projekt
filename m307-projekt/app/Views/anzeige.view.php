@@ -13,6 +13,16 @@
   <li><a class="active nav" href="?uri=anzeige">Anzeigen</a></li>
 </ul>
 <table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Telefon</th>
+    <th>Mengenkategorie</th>
+    <th>Frucht</th>
+    <th>Dörr-Status</th>
+    <th>Datum der Fertigstellung</th>
+    <th></th>
+  </tr>
       <?php
       foreach ($tasks as $task):
       switch ($task->category) {
@@ -31,16 +41,28 @@
         default:
           $days = 5;
           break;
-        }?>
+        }
+        switch ($task->status) {
+          case false:
+            $status = '🍎';
+          break;
+          case true:
+            $status = '🥔';
+          break;
+          default:
+            $status = '🍎';
+            break;
+          }
+        ?>
           <tr>
             <td><?= $task->name ?></td>
             <td><?= $task->email ?></td>
             <td><?= $task->phone ?></td>
             <td><?= $task->category ?></td>
             <td><?= $task->fruit ?></td>
-            <td><?= $task->status ?></td>
-            <td><?= $days ?></td>
-            <td><a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a></td>
+            <td><?= $status ?></td>
+            <td><?= date("d.m.Y", strtotime("+ $days Days")) . "<br>"; ?></td>
+            <td><a href="?uri=edittask&?id=<?= $task->id ?>">✏️</a></td>
           </tr>
       <?php endforeach; ?>
   </table>
