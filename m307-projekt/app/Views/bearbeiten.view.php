@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Meine Seite</title>
   <link rel="stylesheet" href="public/css/app.css">
+      <h1>Früchte-Dörrung Luzern</h1>
 </head>
 <body>
   <ul>
@@ -65,7 +66,7 @@
                           <option value="33">Trauben</option>
                           <option value="34">Kirschen</option>
                           <option value="35">Zwetschgen</option>
-                      </select><br>
+                      </select><br><br>
                       <label for="doerrung">Fertig gedoerrt:</label><br>
                       <input type="checkbox" id="gedoerrt" name="vehicle1">
     </fieldset>

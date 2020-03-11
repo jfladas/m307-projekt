@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+  text-align: center;
     background-color: #81F781;
     font-family: Verdana;
 }
@@ -34,4 +34,10 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #3ADF00;
+}
+
+img {
+  border-radius: 12px;
+  margin-left: 3%;
+
 }

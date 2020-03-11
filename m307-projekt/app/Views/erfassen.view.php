@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Meine Seite</title>
   <link rel="stylesheet" href="public/css/app.css">
+      <h1>Früchte-Dörrung Luzern</h1>
 </head>
 <body>
   <ul>
   <li><a href="?uri=">Willkommen</a></li>
   <li><a class="active" href="?uri=erfassen">Erfassen</a></li>
-  <li><a href="?uri=bearbeiten">Bearbeiten</a></li>
   <li><a href="?uri=anzeige">Anzeigen</a></li>
-</ul>
+  </ul>
   <form action="?uri=bearbeiten">
     <br><br>
     <fieldset>
