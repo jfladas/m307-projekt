@@ -4,7 +4,6 @@ $router = new Router();
 
 $router->define([
     '' => 'app/Controllers/WelcomeController.php',
-
     'erfassen' => 'app/Controllers/ErfassenController.php',
     'bearbeiten' => 'app/Controllers/BearbeitenController.php',
     'anzeige' => 'app/Controllers/AnzeigeController.php',
@@ -12,5 +11,4 @@ $router->define([
     'addtask' => 'app/Controllers/AddTaskController.php',
     'edittask' => 'app/Controllers/EditTaskController.php',
     'updatetask' => 'app/Controllers/UpdateTaskController.php'
-
 ]);

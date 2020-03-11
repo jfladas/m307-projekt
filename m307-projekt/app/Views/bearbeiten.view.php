@@ -6,7 +6,14 @@
   <link rel="stylesheet" href="public/css/app.css">
 </head>
 <body>
+  <ul>
+  <li><a href="?uri=">Willkommen</a></li>
+  <li><a href="?uri=erfassen">Erfassen</a></li>
+  <li><a class="active" href="?uri=bearbeiten">Bearbeiten</a></li>
+  <li><a href="?uri=anzeige">Anzeigen</a></li>
+</ul>
   <form action="/?uri=bearbeiten" method="post">
+<br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
       <label for="fname">Name:</label><br>
@@ -14,8 +21,9 @@
       <label for="lname">Email:</label><br>
       <input type="email" id="lname" name="lname" required><br><br>
       <label for="phone">Telefon:</label><br>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+      <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
     </fieldset>
+    <br>
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
       <label for="menge">Mengenkategorie:</label><br>
@@ -61,7 +69,7 @@
                       <label for="doerrung">Fertig gedoerrt:</label><br>
                       <input type="checkbox" id="gedoerrt" name="vehicle1">
     </fieldset>
-          <input type="submit" value="Speichern">
+          <br><input type="submit" value="Speichern">
   </form>
 </body>
 </html>

@@ -6,7 +6,14 @@
   <link rel="stylesheet" href="public/css/app.css">
 </head>
 <body>
+  <ul>
+  <li><a href="?uri=">Willkommen</a></li>
+  <li><a class="active" href="?uri=erfassen">Erfassen</a></li>
+  <li><a href="?uri=bearbeiten">Bearbeiten</a></li>
+  <li><a href="?uri=anzeige">Anzeigen</a></li>
+</ul>
   <form action="?uri=bearbeiten">
+    <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
       <label for="fname">Name:</label><br>
@@ -14,8 +21,9 @@
       <label for="lname">Email:</label><br>
       <input type="email" id="lname" name="lname" required><br><br>
       <label for="phone">Telefon:</label><br>
-      <input type="tel" id="phone" name="phone"><br><br>
+      <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
     </fieldset>
+    <br>
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
       <label for="menge">Mengenkategorie:</label><br>
@@ -25,7 +33,7 @@
                   <option value="10-15">10-15 kg</option>
                   <option value="15-20">15-20 kg</option>
               </select><br>
-              <label for="frucht">Frucht:</label><br>
+              <br><label for="frucht">Frucht:</label><br>
               <select name="frucht">
                           <option value="1">Ananas</option>
                           <option value="2">Aepfel</option>
@@ -64,7 +72,7 @@
                           <option value="35">Zwetschgen</option>
                       </select><br>
     </fieldset>
-          <input type="submit" value="Erfassen">
+          <br><input type="submit" value="Erfassen">
   </form>
 </body>
 </html>
