@@ -15,9 +15,9 @@
 <br><br>
 <div class="bild1" id=1>
     <a href="?uri=erfassen">
-  <img src="fruechte.jpg" alt="picture" height="600vh">
+  <img src="fruechteErfassen.png" alt="picture" height="600vh">
     <a href="?uri=anzeige">
-  <img src="fruechte.jpg" alt="picture" height="600vh">
+  <img src="fruechteAnzeigen.png" alt="picture" height="600vh">
 </div>
 </body>
 </html>
