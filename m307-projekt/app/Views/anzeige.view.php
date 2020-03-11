@@ -12,5 +12,29 @@
   <li><a href="?uri=bearbeiten">Bearbeiten</a></li>
   <li><a class="active" href="?uri=anzeige">Anzeigen</a></li>
 </ul>
+      <?php
+      foreach ($tasks as $task):
+      switch ($task->category) {
+        case '1':
+          $days = 5;
+        break;
+        case '2':
+          $days = 8;
+        break;
+        case '3':
+          $days = 12;
+        break;
+        case '4':
+          $days = 18;
+        break;
+        default:
+          $days = 5;
+          break;
+        }?>
+          <li><?= $task->name ?> | <?= $task->email ?> | <?= $task->phone ?> |
+              <?= $task->category ?>  | <?= $task->fruit ?> | <?= $task->status ?> |
+              <?= $days ?>
+      <?php endforeach; ?>
+  </ul>
 </body>
 </html>
