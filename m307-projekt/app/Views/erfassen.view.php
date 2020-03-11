@@ -17,9 +17,9 @@
     <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
-      <label for="name">Name</label><br>
+      <label for="name">Name*</label><br>
       <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email</label><br>
+      <label for="email">Email*</label><br>
       <input type="email" id="email" name="email" required><br><br>
       <label for="phone">Telefon</label><br>
       <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>

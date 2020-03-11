@@ -5,4 +5,5 @@ $fruit = new Fruit();
 $fruits = $fruit->getAll();
 $category = new Category();
 $categories = $category->getAll();
+
 require 'app/Views/anzeige.view.php';

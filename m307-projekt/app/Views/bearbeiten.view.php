@@ -17,9 +17,9 @@
 <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
-      <label for="name">Name</label><br>
+      <label for="name">Name*</label><br>
       <input type="text" id="name" name="name" required value=<?=$name?>><br><br>
-      <label for="email">Email</label><br>
+      <label for="email">Email*</label><br>
       <input type="email" id="email" name="email" required value=<?=$email?>><br><br>
       <label for="phone">Telefon</label><br>
       <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$" value=<?=$phone?>><br><br>
@@ -28,7 +28,6 @@
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
       <label for="category">Mengenkategorie</label><br>
-
       <select name="category" disabled>
         <?php foreach ($categories as $cat): ?>
           <option value="<?=$cat->id?>"<?php if($category == $cat->id){echo("selected");}?>><?=$cat->name?></option>
@@ -40,6 +39,8 @@
           <option value="<?=$fru->id?>"<?php if($fruit == $fru->id){echo("selected");}?>><?=$fru->name?></option>
         <?php endforeach; ?>
       </select><br><br>
+      <label for="frist">Frist</label><br>
+      <input type="text" id="frist" name="frist" value="<?=$frist?>"><br><br>
       <input type="checkbox" id="status" name="status"<?php if($status){echo("checked");}?>>
       <label for="status">Fertig gedoerrt</label>
     </fieldset>

@@ -4,9 +4,10 @@ $id = $task->id;
 $name = $task->name;
 $email = $task->email;
 $phone = $task->phone;
-$fruit = $task->fruit;
-$category = $task->category;
+$fru = $task->fruit;
+$cat = $task->category;
 $status = $task->status;
+$frist = $task->frist;
 
 
 $fruit = new Fruit();
