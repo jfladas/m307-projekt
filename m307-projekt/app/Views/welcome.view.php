@@ -7,8 +7,5 @@
 </head>
 <body>
 
-<h1 class="welcome">Willkommen im 307-Framework!</h1>
-
-<script src="public/js/app.js"></script>
 </body>
 </html>
