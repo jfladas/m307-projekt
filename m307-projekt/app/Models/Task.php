@@ -65,19 +65,12 @@ class Task
     {
         $statement = db()->prepare('UPDATE `tasks` SET name = :name, email = :email, phone = :phone, fruit = :fruit, status = :status
                                     WHERE id = :id');
+        $statement->bindParam(':id', $this->id);
         $statement->bindParam(':name', $this->name);
         $statement->bindParam(':email', $this->email);
         $statement->bindParam(':phone', $this->phone);
         $statement->bindParam(':fruit', $this->fruit);
         $statement->bindParam(':status', $this->status);
-
-        return $statement->execute();
-    }
-
-    public static function delete($id)
-    {
-        $statement = db()->prepare('DELETE FROM `tasks` WHERE id = :id');
-        $statement->bindParam(':id', $id);
 
         return $statement->execute();
     }
