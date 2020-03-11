@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Erfassung Dörrung</title>
   <link rel="stylesheet" href="public/css/app.css">
-      <h1>Früchte-Dörrung Luzern</h1>
+      <h1>Früchte-Dörrung</h1>
 </head>
 <body>
   <ul>
