@@ -12,6 +12,7 @@
   <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
   <li><a href="?uri=anzeige" class='nav'>Anzeigen</a></li>
 </ul>
+<div class="bearbeitung">
   <form action="?uri=updatetask&?id=<?=$id?>" method="post">
 <br><br>
     <fieldset>
@@ -71,5 +72,6 @@
     </fieldset>
           <br><input type="submit" value="Speichern">
   </form>
+</div>
 </body>
 </html>

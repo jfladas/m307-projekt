@@ -39,5 +39,24 @@ li {
 img {
   border-radius: 12px;
   margin-left: 3%;
+}
 
+div.erfassen{
+  position: fixed;
+  left: 37%;
+  border: 3px solid #73AD21;
+}
+div.anzeigen{
+  position: fixed;
+  right: 35%;
+  border: 3px solid #73AD21;
+}
+
+div.erfassung{
+    position: fixed;
+    right: 45%;
+}
+div.bearbeitung{
+    position: fixed;
+    right: 45%;
 }

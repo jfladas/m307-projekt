@@ -12,6 +12,7 @@
   <li><a class="active nav" href="?uri=erfassen">Erfassen</a></li>
   <li><a href="?uri=anzeige" class="nav">Anzeigen</a></li>
 </ul>
+<div class="erfassung">
   <form action="?uri=addtask" method="post">
     <br><br>
     <fieldset>
@@ -74,5 +75,6 @@
     </fieldset>
           <br><input type="submit" value="Erfassen">
   </form>
+</div>
 </body>
 </html>
