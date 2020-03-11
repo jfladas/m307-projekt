@@ -11,30 +11,30 @@
   <li><a href="?uri=">Willkommen</a></li>
   <li><a class="active" href="?uri=erfassen">Erfassen</a></li>
   <li><a href="?uri=anzeige">Anzeigen</a></li>
-  </ul>
-  <form action="?uri=bearbeiten">
+</ul>
+  <form action="?uri=addtask" method="post">
     <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
-      <label for="fname">Name:</label><br>
-      <input type="text" id="fname" name="fname" required><br><br>
-      <label for="lname">Email:</label><br>
-      <input type="email" id="lname" name="lname" required><br><br>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
       <label for="phone">Telefon:</label><br>
       <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
     </fieldset>
     <br>
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
-      <label for="menge">Mengenkategorie:</label><br>
-      <select name="Menge">
-                  <option value="0-5">0-5 kg</option>
-                  <option value="5-10">5-10 kg</option>
-                  <option value="10-15">10-15 kg</option>
-                  <option value="15-20">15-20 kg</option>
+      <label for="category">Mengenkategorie:</label><br>
+      <select name="category">
+                  <option value="1">0-5 kg</option>
+                  <option value="2">5-10 kg</option>
+                  <option value="3">10-15 kg</option>
+                  <option value="4">15-20 kg</option>
               </select><br>
-              <br><label for="frucht">Frucht:</label><br>
-              <select name="frucht">
+              <br><label for="fruit">Frucht:</label><br>
+              <select name="fruit">
                     <option value="1">Ananas</option>
                     <option value="2">Aepfel</option>
                     <option value="3">Aprikose</option>

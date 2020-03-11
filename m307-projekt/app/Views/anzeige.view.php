@@ -34,6 +34,9 @@
           <li><?= $task->name ?> | <?= $task->email ?> | <?= $task->phone ?> |
               <?= $task->category ?>  | <?= $task->fruit ?> | <?= $task->status ?> |
               <?= $days ?>
+              <br>
+              <a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a>
+              <br>
       <?php endforeach; ?>
   </ul>
 </body>

@@ -13,24 +13,24 @@
   <li><a class="active" href="?uri=bearbeiten">Bearbeiten</a></li>
   <li><a href="?uri=anzeige">Anzeigen</a></li>
 </ul>
-  <form action="/?uri=bearbeiten" method="post">
+  <form action="?uri=updatetask?id=<?= $task->id ?>" method="post">
 <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
-      <label for="fname">Name:</label><br>
-      <input type="text" id="fname" name="fname" required><br><br>
-      <label for="lname">Email:</label><br>
-      <input type="email" id="lname" name="lname" required><br><br>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
       <label for="phone">Telefon:</label><br>
       <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
     </fieldset>
     <br>
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
-      <label for="menge">Mengenkategorie:</label><br>
-      <input type="text" id="menge" name="menge" readonly><br><br>
-              <label for="frucht">Frucht:</label><br>
-              <select name="frucht">
+      <label for="category">Mengenkategorie:</label><br>
+      <input type="text" id="category" name="category" readonly><br><br>
+              <label for="fruit">Frucht:</label><br>
+              <select name="fruit">
                           <option value="1">Ananas</option>
                           <option value="2">Aepfel</option>
                           <option value="3">Aprikose</option>
@@ -66,9 +66,9 @@
                           <option value="33">Trauben</option>
                           <option value="34">Kirschen</option>
                           <option value="35">Zwetschgen</option>
-                      </select><br><br>
-                      <label for="doerrung">Fertig gedoerrt:</label><br>
-                      <input type="checkbox" id="gedoerrt" name="vehicle1">
+                      </select><br>
+                      <label for="status">Fertig gedoerrt:</label><br>
+                      <input type="checkbox" id="status" name="status">
     </fieldset>
           <br><input type="submit" value="Speichern">
   </form>

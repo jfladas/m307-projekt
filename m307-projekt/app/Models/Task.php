@@ -23,15 +23,15 @@ class Task
 
     public function create()
     {
-        $statement = db()->prepare('INSERT INTO `tasks` (name, email, phone, category, fruit, status)
+        $statement = db()->prepare('INSERT INTO `tasks` (name, email, phone, fk_category, fk_fruit, status)
                                     VALUES (:name, :email, :phone, :category, :fruit, :status)');
         $statement->bindParam(':name', $this->name, PDO::PARAM_STR);
         $statement->bindParam(':email', $this->email, PDO::PARAM_STR);
         $statement->bindParam(':phone', $this->phone, PDO::PARAM_STR);
         $statement->bindParam(':category', $this->category, PDO::PARAM_INT);
         $statement->bindParam(':fruit', $this->fruit, PDO::PARAM_INT);
-        $statement->bindParam(':status', 0, PDO::PARAM_BOOL);
-
+        $statement->bindParam(':status', $this->status, PDO::PARAM_BOOL);
+        var_dump($this);
         return $statement->execute();
     }
 
@@ -54,10 +54,10 @@ class Task
 
     public static function getById($id)
     {
-        $statement = db()->prepare('SELECT * FROM tasks WHERE id = :id');
+        $statement = db()->prepare('SELECT * FROM `tasks` WHERE id = :id');
         $statement->bindParam(':id', $id, PDO::PARAM_INT);
         $statement->execute();
-
+        var_dump($statement->execute());
         return Task::dbResultToTask($statement->fetch());
     }
 
