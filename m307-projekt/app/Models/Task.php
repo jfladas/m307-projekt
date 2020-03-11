@@ -53,7 +53,6 @@ class Task
 
     public static function getById($id)
     {
-      var_dump($id);
         $statement = db()->prepare('SELECT * FROM `tasks` WHERE id = :id');
         $statement->bindParam(':id', $id, PDO::PARAM_INT);
         $statement->execute();

@@ -12,24 +12,24 @@
   <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
   <li><a href="?uri=anzeige" class='nav'>Anzeigen</a></li>
 </ul>
-  <form action="?uri=updatetask&?id=<?= $task->id ?>" method="post">
+  <form action="?uri=updatetask&?id=<?=$id?>" method="post">
 <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+      <input type="text" id="name" name="name" required value=<?=$name?>><br><br>
       <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" required value=<?=$email?>><br><br>
       <label for="phone">Telefon:</label><br>
-      <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
+      <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$" value=<?=$phone?>><br><br>
     </fieldset>
     <br>
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
       <label for="category">Mengenkategorie:</label><br>
-      <input type="text" id="category" name="category" readonly><br><br>
+      <input type="text" id="category" name="category" readonly ><br><br>
               <label for="fruit">Frucht:</label><br>
-              <select name="fruit">
+              <select name="fruit" value="7">
                           <option value="1">Ananas</option>
                           <option value="2">Aepfel</option>
                           <option value="3">Aprikose</option>
