@@ -8,9 +8,9 @@
 </head>
 <body>
   <ul>
-  <li><a href="?uri=">Willkommen</a></li>
-  <li><a href="?uri=erfassen">Erfassen</a></li>
-  <li><a class="active" href="?uri=anzeige">Anzeigen</a></li>
+  <li><a href="?uri=" class='nav'>Willkommen</a></li>
+  <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
+  <li><a class="active" href="?uri=anzeige" class='nav'>Anzeigen</a></li>
 </ul>
       <?php
       foreach ($tasks as $task):
@@ -33,10 +33,8 @@
         }?>
           <li><?= $task->name ?> | <?= $task->email ?> | <?= $task->phone ?> |
               <?= $task->category ?>  | <?= $task->fruit ?> | <?= $task->status ?> |
-              <?= $days ?>
-              <br>
-              <a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a>
-              <br>
+              <?= $days ?> | <a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a>
+          </li>
       <?php endforeach; ?>
   </ul>
 </body>

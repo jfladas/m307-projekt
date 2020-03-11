@@ -8,12 +8,11 @@
 </head>
 <body>
   <ul>
-  <li><a href="?uri=">Willkommen</a></li>
-  <li><a href="?uri=erfassen">Erfassen</a></li>
-  <li><a class="active" href="?uri=bearbeiten">Bearbeiten</a></li>
-  <li><a href="?uri=anzeige">Anzeigen</a></li>
+  <li><a href="?uri=" class='nav'>Willkommen</a></li>
+  <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
+  <li><a href="?uri=anzeige" class='nav'>Anzeigen</a></li>
 </ul>
-  <form action="?uri=updatetask?id=<?= $task->id ?>" method="post">
+  <form action="?uri=updatetask&?id=<?= $task->id ?>" method="post">
 <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
