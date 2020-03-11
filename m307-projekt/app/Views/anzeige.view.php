@@ -12,6 +12,7 @@
   <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
   <li><a class="active nav" href="?uri=anzeige">Anzeigen</a></li>
 </ul>
+<table>
       <?php
       foreach ($tasks as $task):
       switch ($task->category) {
@@ -31,12 +32,17 @@
           $days = 5;
           break;
         }?>
-
-          <li><?= $task->name ?> | <?= $task->email ?> | <?= $task->phone ?> |
-              <?= $task->category ?>  | <?= $task->fruit ?> | <?= $task->status ?> |
-              <?= $days ?> | <a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a>
-          </li>
+          <tr>
+            <td><?= $task->name ?></td>
+            <td><?= $task->email ?></td>
+            <td><?= $task->phone ?></td>
+            <td><?= $task->category ?></td>
+            <td><?= $task->fruit ?></td>
+            <td><?= $task->status ?></td>
+            <td><?= $days ?></td>
+            <td><a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a></td>
+          </tr>
       <?php endforeach; ?>
-  </ul>
+  </table>
 </body>
 </html>
