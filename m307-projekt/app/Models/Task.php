@@ -31,7 +31,6 @@ class Task
         $statement->bindParam(':category', $this->category, PDO::PARAM_INT);
         $statement->bindParam(':fruit', $this->fruit, PDO::PARAM_INT);
         $statement->bindParam(':status', $this->status, PDO::PARAM_BOOL);
-        var_dump($this);
         return $statement->execute();
     }
 
@@ -54,16 +53,16 @@ class Task
 
     public static function getById($id)
     {
+      var_dump($id);
         $statement = db()->prepare('SELECT * FROM `tasks` WHERE id = :id');
         $statement->bindParam(':id', $id, PDO::PARAM_INT);
         $statement->execute();
-        var_dump($statement->execute());
         return Task::dbResultToTask($statement->fetch());
     }
 
     public function update()
     {
-        $statement = db()->prepare('UPDATE `tasks` SET name = :name, email = :email, phone = :phone, fruit = :fruit, status = :status
+        $statement = db()->prepare('UPDATE `tasks` SET name = :name, email = :email, phone = :phone, fk_fruit = :fruit, status = :status
                                     WHERE id = :id');
         $statement->bindParam(':id', $this->id);
         $statement->bindParam(':name', $this->name);

@@ -20,7 +20,7 @@ li {
   float: left;
 }
 
-li a {
+.nav {
   display: block;
   color: white;
   text-align: center;
@@ -28,7 +28,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.nav:hover:not(.active) {
   background-color: #111;
 }
 
