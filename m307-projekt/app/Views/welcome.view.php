@@ -8,7 +8,7 @@
 </head>
 <body>
   <ul>
-  <li><a class="active" href="?uri=" class='nav'>Willkommen</a></li>
+  <li><a class="active nav" href="?uri=">Willkommen</a></li>
   <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
   <li><a href="?uri=anzeige" class='nav'>Anzeigen</a></li>
   </ul>

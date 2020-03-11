@@ -8,9 +8,9 @@
 </head>
 <body>
   <ul>
-  <li><a href="?uri=">Willkommen</a></li>
-  <li><a class="active" href="?uri=erfassen">Erfassen</a></li>
-  <li><a href="?uri=anzeige">Anzeigen</a></li>
+  <li><a href="?uri=" class="nav">Willkommen</a></li>
+  <li><a class="active nav" href="?uri=erfassen">Erfassen</a></li>
+  <li><a href="?uri=anzeige" class="nav">Anzeigen</a></li>
 </ul>
   <form action="?uri=addtask" method="post">
     <br><br>

@@ -10,7 +10,7 @@
   <ul>
   <li><a href="?uri=" class='nav'>Willkommen</a></li>
   <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
-  <li><a class="active" href="?uri=anzeige" class='nav'>Anzeigen</a></li>
+  <li><a class="active nav" href="?uri=anzeige">Anzeigen</a></li>
 </ul>
       <?php
       foreach ($tasks as $task):
@@ -31,6 +31,7 @@
           $days = 5;
           break;
         }?>
+
           <li><?= $task->name ?> | <?= $task->email ?> | <?= $task->phone ?> |
               <?= $task->category ?>  | <?= $task->fruit ?> | <?= $task->status ?> |
               <?= $days ?> | <a href="?uri=edittask&?id=<?= $task->id ?>">bearbeiten</a>
