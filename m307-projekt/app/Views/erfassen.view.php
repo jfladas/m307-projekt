@@ -38,7 +38,7 @@
         <?php foreach ($categories as $cat): ?>
           <option value="<?=$cat->id?>"><?=$cat->name?></option>
         <?php endforeach; ?>
-      </select><br><br>
+      </select><br>
       <label for="fruit">Frucht</label><br>
       <select name="fruit">
         <?php foreach ($fruits as $fru): ?>
