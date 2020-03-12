@@ -20,7 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     $frist = date("d.m.Y", strtotime("+ $days Days"));
 
-    $task = new Task(null, $_POST['name'], $_POST['email'], $_POST['phone'], $_POST['category'], $_POST['fruit'], false, $frist);
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $phone = trim($_POST['phone']);
+
+    $task = new Task(null, $name, $email, $phone, $_POST['category'], $_POST['fruit'], false, $frist);
     $task->create();
 
     header('Location: http://localhost/m307-projekt/m307-projekt/?uri=anzeige');

@@ -1,5 +1,6 @@
 <?php
 if($_GET['?x']){
+  var_dump($_POST);
   foreach ($_POST as $x) {
     $task = Task::getById($x);
     $name = $task->name;
@@ -12,8 +13,13 @@ if($_GET['?x']){
     $task->update();
   }
 }else{
+
+  $name = trim($_POST['name']);
+  $email = trim($_POST['email']);
+  $phone = trim($_POST['phone']);
+
   $status = (bool)$_POST['status'] ?? false;
-  $task = new Task($_GET['?id'], $_POST['name'], $_POST['email'], $_POST['phone'], $_POST['category'], $_POST['fruit'], $status, $_POST['frist']);
+  $task = new Task($_GET['?id'], $name, $email, $phone, $_POST['category'], $_POST['fruit'], $status, $_POST['frist']);
   $task->update();
 }
 

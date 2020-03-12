@@ -28,6 +28,7 @@
 
   </tr>
       <?php
+      $i=1;
       foreach ($tasks as $task):
         $id = $task->id;
         $name = $task->name;
@@ -44,9 +45,10 @@
         }else {
           $infrist = '🥔';
         }
+
         if(!$status){?>
           <tr>
-            <td><input type="checkbox" name="status" value="<?= $id ?>"></td>
+            <td><input type="checkbox" name="status<?=$i?>" value="<?= $id ?>"></td>
             <td><?= $name ?></td>
             <td><?= $email ?></td>
             <td><?= $phone ?></td>
@@ -56,7 +58,7 @@
             <td><?= $infrist ?></td>
             <td><a href="?uri=edittask&?id=<?= $id ?>">✏️</a></td>
           </tr>
-      <?php }endforeach; ?>
+      <?php $i++;}endforeach; ?>
   </table><br>
   <input type="submit" value="Ausgewählte Aufträge abschliessen">
 </form>
