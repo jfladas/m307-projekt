@@ -29,7 +29,7 @@
       <input type="email" id="email" name="email" value=<?=$email?>>
   </div>
   <label for="phone">Telefon</label><br>
-  <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
+  <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"value=<?=$phone?>><br><br>
 </fieldset>
 
     <br>
