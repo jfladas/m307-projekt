@@ -1,5 +1,7 @@
 addEventListener("load", function(){
-  document.querySelector('#frist').value = toDate(new Date());
+  date = new Date();
+  date.setDate(date.getDate() + 5);
+  document.querySelector('#frist').value = toDate(date);
     document.getElementById("category").addEventListener("change", function() {
       var days = 5;
       switch (document.querySelector('#category').value) {
