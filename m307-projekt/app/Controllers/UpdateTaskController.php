@@ -18,3 +18,4 @@ if($_GET['?x']){
 }
 
 header('Location: http://localhost/m307-projekt/m307-projekt/?uri=anzeige');
+//http://web.kurse.ict-bz.ch/m307_1/fruechtedoerrung_luan_gashi_lukas_bucher/?uri=anzeige
