@@ -46,6 +46,7 @@ div.erfassen{
   left: 37%;
   border: 3px solid #73AD21;
 }
+
 div.anzeigen{
   position: fixed;
   right: 35%;
@@ -106,4 +107,16 @@ input[type="submit"]:hover{
 fieldset{
   align-content: white;
   border-radius: 5px;
+}
+
+.error-msg {
+    display: inline-block;
+    padding: .1em .6em;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+    background: #0B610B;
+    color: #fff;
 }

@@ -13,14 +13,20 @@
   <li><a href="?uri=anzeige" class="nav">Anzeigen</a></li>
 </ul>
 <div class="erfassung">
-  <form action="?uri=addtask" method="post">
+  <form action="?uri=addtask" method="post" id="inlineForm">
     <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
-      <label for="name">Name*</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email*</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+
+      <div class="form-group">
+          <label for="name">Name*</label><br>
+          <input type="text" id="name" name="name">
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email*</label><br>
+          <input type="email" id="email" name="email">
+      </div>
       <label for="phone">Telefon</label><br>
       <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
     </fieldset>
@@ -40,8 +46,9 @@
         <?php endforeach; ?>
       </select><br>
     </fieldset><br>
-    <input type="submit" value="Erfassen">
+    <input id="submit" type="submit" value="Erfassen">
   </form>
 </div>
 </body>
+<script src="public/js/scriptInline.js"></script>
 </html>
