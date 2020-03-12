@@ -34,7 +34,7 @@
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
       <label for="category">Mengenkategorie</label><br>
-      <select name="category">
+      <select name="category" id="category">
         <?php foreach ($categories as $cat): ?>
           <option value="<?=$cat->id?>"><?=$cat->name?></option>
         <?php endforeach; ?>
@@ -45,10 +45,13 @@
           <option value="<?=$fru->id?>"><?=$fru->name?></option>
         <?php endforeach; ?>
       </select><br>
+      <label for="frist">Frist</label><br>
+      <input type="text" id="frist" name="frist" value="" readonly><br><br>
     </fieldset><br>
     <input id="submit" type="submit" value="Erfassen">
   </form>
 </div>
 </body>
 <script src="public/js/scriptError.js"></script>
+<script src="public/js/scriptFrist.js"></script>
 </html>
