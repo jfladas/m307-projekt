@@ -81,3 +81,29 @@ table th {
   text-align: left;
   background-color: #4CAF50;
   color: white;
+}
+input, select{
+    background: #fff;
+    color: #000;
+    border-color: #000;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin:5px;
+ }
+ select:disabled, input:read-only{
+   background: #dddddd;
+ }
+
+ input[type="submit"]{
+   padding: 10px;
+ }
+
+input[type="submit"]:hover{
+  background: #dddddd;
+}
+
+fieldset{
+  align-content: white;
+  border-radius: 5px;
+}

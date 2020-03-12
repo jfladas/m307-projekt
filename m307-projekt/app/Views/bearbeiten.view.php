@@ -40,7 +40,7 @@
         <?php endforeach; ?>
       </select><br><br>
       <label for="frist">Frist</label><br>
-      <input type="text" id="frist" name="frist" value="<?=$frist?>"><br><br>
+      <input type="text" id="frist" name="frist" value="<?=$frist?>" readonly><br><br>
       <input type="checkbox" id="status" name="status"<?php if($status){echo("checked");}?>>
       <label for="status">Fertig gedoerrt</label>
     </fieldset>
