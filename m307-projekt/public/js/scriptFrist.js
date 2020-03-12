@@ -1,5 +1,5 @@
 addEventListener("load", function(){
-  date = new Date();
+  var date = new Date();
   date.setDate(date.getDate() + 5);
   document.querySelector('#frist').value = toDate(date);
     document.getElementById("category").addEventListener("change", function() {
@@ -23,7 +23,7 @@ addEventListener("load", function(){
         }
         var frist = new Date();
         frist.setDate(frist.getDate() + days);
-        document.querySelector('#frist').value = toDate(frist);;
+        document.querySelector('#frist').value = toDate(frist);
     });
 });
  function toDate(date){
