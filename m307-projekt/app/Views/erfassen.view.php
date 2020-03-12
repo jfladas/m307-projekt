@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <title>Erfassung Dörrung</title>
   <link rel="stylesheet" href="public/css/app.css">
     <h1><a href="?uri=" class="titel">FruttiTutti</a></h1>
