@@ -8,6 +8,7 @@ body {
     padding-top: 40vh;
 }
 
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -113,6 +114,16 @@ fieldset{
   border-style: solid;
   border-color: black;
   border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.titel{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .error-msg {

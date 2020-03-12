@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Erfassung Dörrung</title>
   <link rel="stylesheet" href="public/css/app.css">
-      <h1>Früchte-Dörrung</h1>
+    <h1><a href="?uri=" class="titel">Früchte-Dörrung</a></h1>
 </head>
 <body>
   <ul>
@@ -13,7 +13,7 @@
   <li><a href="?uri=anzeige" class="nav">Anzeigen</a></li>
 </ul>
 <div class="erfassung">
-  <form action="?uri=addtask" method="post" id="inlineForm">
+  <form action="?uri=addtask" method="post" id="errorForm">
     <br><br>
     <fieldset>
       <legend>Angaben zur Person</legend>
@@ -50,5 +50,5 @@
   </form>
 </div>
 </body>
-<script src="public/js/scriptInline.js"></script>
+<script src="public/js/scriptError.js"></script>
 </html>

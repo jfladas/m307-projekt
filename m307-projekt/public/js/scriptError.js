@@ -1,9 +1,9 @@
 addEventListener("load", function(){
-    document.querySelector('#inlineForm').addEventListener('submit', function(evt) {
+    document.querySelector('#errorForm').addEventListener('submit', function(evt) {
 
         var fields = [
-            {id: 'name', message: 'Bitte geben sie ihren Namen ein.'},
-            {id: 'email', message: 'Bitte geben sie ihre Email ein.'},
+            {id: 'name', message: 'Bitte Namen eingeben!'},
+            {id: 'email', message: 'Bitte Email eingeben!'},
         ];
         document.querySelectorAll('.has-error').forEach(element => element.classList.remove('has-error'));
         document.querySelectorAll('label .error-msg').forEach(element => element.remove());

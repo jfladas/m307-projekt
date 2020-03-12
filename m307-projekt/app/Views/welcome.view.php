@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Früchte-Dörrung Luzern</title>
     <link rel="stylesheet" href="public/css/app.css">
-    <h1>Früchte-Dörrung</h1>
+      <h1><a href="?uri=" class="titel">Früchte-Dörrung</a></h1>
 </head>
 <body>
   <ul>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Anzeigen</title>
   <link rel="stylesheet" href="public/css/app.css">
-      <h1>Früchte-Dörrung</h1>
+    <h1><a href="?uri=" class="titel">Früchte-Dörrung</a></h1>
       <ul>
       <li><a href="?uri=" class='nav'>Willkommen</a></li>
       <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
@@ -16,15 +16,16 @@
 <form action="?uri=updatetask&?x=1" method="post">
 <table>
   <tr>
-    <th>Status</th>
+    <th></th>
     <th>Name</th>
     <th>Email</th>
     <th>Telefon</th>
     <th>Mengenkategorie</th>
     <th>Frucht</th>
     <th>Datum der Fertigstellung</th>
+    <th>Status</th>
     <th></th>
-    <th></th>
+
   </tr>
       <?php
       foreach ($tasks as $task):

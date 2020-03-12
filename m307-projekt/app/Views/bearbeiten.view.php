@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Bearbeitung Dörrung</title>
   <link rel="stylesheet" href="public/css/app.css">
-      <h1>Früchte-Dörrung</h1>
+    <h1><a href="?uri=" class="titel">Früchte-Dörrung</a></h1>
 </head>
 <body>
   <ul>
@@ -13,17 +13,24 @@
   <li><a href="?uri=anzeige" class='nav'>Anzeigen</a></li>
 </ul>
 <div class="bearbeitung">
-  <form action="?uri=updatetask&?id=<?=$id?>" method="post">
+  <form action="?uri=updatetask&?id=<?=$id?>" method="post" id="errorForm">
 <br><br>
-    <fieldset>
-      <legend>Angaben zur Person</legend>
+<fieldset>
+  <legend>Angaben zur Person</legend>
+
+  <div class="form-group">
       <label for="name">Name*</label><br>
-      <input type="text" id="name" name="name" required value=<?=$name?>><br><br>
+      <input type="text" id="name" name="name" value=<?=$name?>>
+  </div>
+
+  <div class="form-group">
       <label for="email">Email*</label><br>
-      <input type="email" id="email" name="email" required value=<?=$email?>><br><br>
-      <label for="phone">Telefon</label><br>
-      <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$" value=<?=$phone?>><br><br>
-    </fieldset>
+      <input type="email" id="email" name="email" value=<?=$email?>>
+  </div>
+  <label for="phone">Telefon</label><br>
+  <input type="tel" id="phone" name="phone" pattern="^(0|0041|\+41)?[1-9\s][0-9\s]{1,12}$"><br><br>
+</fieldset>
+
     <br>
     <fieldset>
       <legend>Angaben zur Bestellung</legend>
@@ -48,4 +55,5 @@
   </form>
 </div>
 </body>
+<script src="public/js/scriptError.js"></script>
 </html>
