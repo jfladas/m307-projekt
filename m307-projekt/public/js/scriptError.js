@@ -2,7 +2,7 @@ addEventListener("load", function(){
     document.querySelector('#errorForm').addEventListener('submit', function(evt) {
 
         var fields = [
-            {id: 'name', message: 'Bitte Namen eingeben!'},
+            {id: 'name', message: 'Bitte Name eingeben!'},
             {id: 'email', message: 'Bitte Email eingeben!'},
         ];
         document.querySelectorAll('.has-error').forEach(element => element.classList.remove('has-error'));
