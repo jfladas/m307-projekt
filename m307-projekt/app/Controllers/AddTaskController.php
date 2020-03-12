@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $task = new Task(null, $name, $email, $phone, $_POST['category'], $_POST['fruit'], false, $_POST['frist']);
     $task->create();
 
-    header('Location: http://localhost/m307-projekt/m307-projekt/?uri=anzeige');
-    //http://web.kurse.ict-bz.ch/m307_1/fruechtedoerrung_luan_gashi_lukas_bucher/?uri=anzeige
+    header('Location: http://web.kurse.ict-bz.ch/m307_1/fruechtedoerrung_luan_gashi_lukas_bucher/?uri=anzeige');
 
 }

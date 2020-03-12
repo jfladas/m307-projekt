@@ -23,5 +23,4 @@ if($_GET['?x']){
   $task->update();
 }
 
-header('Location: http://localhost/m307-projekt/m307-projekt/?uri=anzeige');
-//http://web.kurse.ict-bz.ch/m307_1/fruechtedoerrung_luan_gashi_lukas_bucher/?uri=anzeige
+header('Location: http://web.kurse.ict-bz.ch/m307_1/fruechtedoerrung_luan_gashi_lukas_bucher/?uri=anzeige');
