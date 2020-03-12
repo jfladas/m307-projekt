@@ -1,6 +1,5 @@
 <?php
 if($_GET['?x']){
-  var_dump($_POST);
   foreach ($_POST as $x) {
     $task = Task::getById($x);
     $name = $task->name;
