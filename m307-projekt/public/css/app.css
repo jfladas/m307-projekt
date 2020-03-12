@@ -13,7 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 li {
@@ -43,7 +43,7 @@ img {
 
 div.erfassen{
   position: fixed;
-  left: 37%;
+  left: 35%;
   border: 3px solid #73AD21;
 }
 div.anzeigen{
@@ -67,8 +67,12 @@ table {
   width: 100%;
 }
 
-table td, table th {
-  border: 1px solid #ddd;
+table th {
+  border: 3px solid #81F781;
+  border-radius: 3px;
+  padding: 8px;
+}
+table td{
   padding: 8px;
 }
 
@@ -83,16 +87,16 @@ table th {
   color: white;
 }
 input, select{
-    background: #fff;
-    color: #000;
-    border-color: #000;
+    background: white;
+    color: black;
+    border-color: black;
     border: none;
     border-radius: 3px;
     padding: 5px;
     margin:5px;
  }
  select:disabled, input:read-only{
-   background: #dddddd;
+   background: #ddd;
  }
 
  input[type="submit"]{
@@ -100,10 +104,12 @@ input, select{
  }
 
 input[type="submit"]:hover{
-  background: #dddddd;
+  background: #ddd;
 }
 
 fieldset{
   align-content: white;
+  border-style: solid;
+  border-color: black;
   border-radius: 5px;
 }

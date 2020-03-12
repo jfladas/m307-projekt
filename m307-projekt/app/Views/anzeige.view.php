@@ -5,13 +5,14 @@
   <title>Anzeigen</title>
   <link rel="stylesheet" href="public/css/app.css">
       <h1>Früchte-Dörrung</h1>
+      <ul>
+      <li><a href="?uri=" class='nav'>Willkommen</a></li>
+      <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
+      <li><a class="active nav" href="?uri=anzeige">Anzeigen</a></li>
 </head>
-<body>
-  <ul>
-  <li><a href="?uri=" class='nav'>Willkommen</a></li>
-  <li><a href="?uri=erfassen" class='nav'>Erfassen</a></li>
-  <li><a class="active nav" href="?uri=anzeige">Anzeigen</a></li>
+
 </ul>
+<body>
 <form action="?uri=updatetask&?x=1" method="post">
 <table>
   <tr>
