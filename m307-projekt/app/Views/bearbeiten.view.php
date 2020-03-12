@@ -49,7 +49,7 @@
       <label for="frist">Frist</label><br>
       <input type="text" id="frist" name="frist" value="<?=$frist?>" readonly><br><br>
       <input type="checkbox" id="status" name="status"<?php if($status){echo("checked");}?>>
-      <label for="status">Fertig gedoerrt</label>
+      <label for="status">Auftrag abschliessen</label>
     </fieldset>
           <br><input type="submit" value="Speichern">
   </form>
